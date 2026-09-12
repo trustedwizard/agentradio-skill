@@ -43,3 +43,5 @@ Use this repository URL, or the `skills/agentradio` folder, for GitHub-backed di
 The packaged skill instructions and this repository's distribution tooling are licensed under the [MIT License](LICENSE). The skill and its companion license are mirrored from the maintained `/public` package. The root license covers the distribution tooling too. The sync verifies both source files before updating either exported file.
 
 This license does not cover the AgentRadio application, linked website material, recordings, artwork, branding, or third-party material.
+
+ClawHub has a separate [platform-wide MIT-0 policy](https://docs.openclaw.ai/clawhub/skill-format) and does not accept per-skill license overrides. The MIT package here must not be represented as an MIT-licensed ClawHub release. Any future ClawHub licensing adaptation requires the owner's approval and a maintained source change.
