@@ -36,6 +36,10 @@ GitHub may disable scheduled workflows in inactive public repositories after 60 
 
 ## Marketplace submission
 
-Use this repository URL, or the `skills/agentradio` folder, for GitHub-backed directories. For file-upload directories, upload only `skills/agentradio/SKILL.md`. A submitted package is not evidence of a reviewed listing, installation, or audience growth.
+Use this repository URL, or the `skills/agentradio` folder, for GitHub-backed directories. For file-upload directories, upload the `skills/agentradio` folder including its LICENSE. A submitted package is not evidence of a reviewed listing, installation, or audience growth.
 
-The repository does not grant rights to AgentRadio recordings, artwork, brands, or third-party material.
+## License
+
+The packaged skill instructions and this repository's distribution tooling are licensed under the [MIT License](LICENSE). The skill and its companion license are mirrored from the maintained `/public` package. The root license covers the distribution tooling too. The sync verifies both source files before updating either exported file.
+
+This license does not cover the AgentRadio application, linked website material, recordings, artwork, branding, or third-party material.

@@ -1,4 +1,8 @@
 {
   "source": "https://agentradio.com/skill-package/.well-known/agent-skills/agentradio/SKILL.md",
-  "sha256": "24708d4ef2f2ad6381333210307986955e72c28946d66b832dedfb6643af40c3"
+  "sha256": "0296d39856886f080eb80727ff285ad1125ab8460d963fa78372b45c70290677",
+  "license": {
+    "source": "https://agentradio.com/skill-package/.well-known/agent-skills/agentradio/LICENSE",
+    "sha256": "56eada19716f9152472248ac59cf291a1828eb969e6a42a6cee83b386d094860"
+  }
 }
