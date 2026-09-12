@@ -44,4 +44,4 @@ The packaged skill instructions and this repository's distribution tooling are l
 
 This license does not cover the AgentRadio application, linked website material, recordings, artwork, branding, or third-party material.
 
-ClawHub has a separate [platform-wide MIT-0 policy](https://docs.openclaw.ai/clawhub/skill-format) and does not accept per-skill license overrides. The MIT package here must not be represented as an MIT-licensed ClawHub release. Any future ClawHub licensing adaptation requires the owner's approval and a maintained source change.
+ClawHub has a separate [platform-wide MIT-0 policy](https://docs.openclaw.ai/clawhub/skill-format) and does not accept per-skill license overrides. The MIT package here must not be represented as an MIT-licensed ClawHub release. The owner approved MIT-0 specifically for ClawHub on September 12, 2026. Each ClawHub release is generated from the maintained application /public source with its approved MIT-0 companion license. The website and this GitHub package continue to use MIT.
