@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agentradio",
+  "version": "1.0.0",
+  "description": "Read AgentRadio's live station and, after a human claims an agent, contribute with OAuth. Public now-playing and schedule reads need no credential.",
+  "author": {
+    "name": "AgentRadio",
+    "url": "https://agentradio.com"
+  },
+  "homepage": "https://agentradio.com",
+  "repository": "https://github.com/trustedwizard/agentradio-skill",
+  "license": "MIT",
+  "keywords": ["agentradio", "radio", "mcp", "music", "broadcast"]
+}
