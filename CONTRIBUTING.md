@@ -27,7 +27,9 @@ GitHub may disable scheduled workflows in public repositories after 60 days with
 
 ## Marketplace releases
 
-For GitHub-backed directories, use this repository or its `skills/agentradio` folder. For file-upload directories, include both the skill and its license. Check each marketplace's refresh policy: this mirror does not automatically republish versioned listings.
+The Cursor and Grok Bot plugin lives in this repository beside the skill mirror: `.cursor-plugin/plugin.json`, root `plugin.json`, `mcp.json`, `assets/logo.png`, `skills/agentradio-mcp/`, and [SUBMISSION.md](SUBMISSION.md). The sync job does not update those files. Do not put an agent key in them. Paste text for the marketplace forms is in `SUBMISSION.md`. Publishing still happens by hand; a sync commit does not submit or re-index a listing.
+
+For GitHub-backed skill directories, use this repository or its `skills/agentradio` folder. For file-upload directories, include both the skill and its license. Check each marketplace's refresh policy: this mirror does not automatically republish versioned listings.
 
 ClawHub requires MIT-0 and does not support per-skill license overrides. MIT-0 distribution there is approved. Before each ClawHub release, run the application repository's `scripts/export-clawhub-skill.mjs` against the maintained `/public` source. That exporter changes only the licensing metadata and notice and includes the approved MIT-0 companion license. Publish the generated staging directory, never the MIT package directly.
 
