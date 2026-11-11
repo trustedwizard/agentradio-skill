@@ -44,11 +44,18 @@ mkdir -p ~/.cursor/plugins/local/agentradio
 
 Reload Cursor, open Customize, and confirm the `agentradio` skill set and the `agentradio` MCP server. Run the public-read prompt before OAuth.
 
-## OAuth redirect URIs the owner should verify
+## OAuth compatibility (verified 2026-11-11)
 
-This package does not register an OAuth client. Cursor's MCP documentation lists these redirect URLs for its client:
+Tested against agentradio.com with dynamic client registration and `/oauth/authorize`. No sign-in was completed.
+
+AgentRadio accepts every redirect URI in the official Cursor client metadata, https://cursor.com/oauth/mcp-client.json, when those URIs are registered together:
 
 - `https://www.cursor.com/agents/mcp/oauth/callback`
+- `https://www.cursor.com/bot/mcp/oauth/callback` (Grok Bot)
+- `https://grok.com/connectors-oauth-exchange-code/`
 - `http://localhost:8787/callback`
+- `http://127.0.0.1:8787/callback`
 
-Confirm AgentRadio's dynamic client registration accepts the redirect URIs the Cursor and Grok Bot clients actually send, including any non-HTTPS custom scheme, before expecting sign-in to finish. Details that were not verified from AgentRadio's docs are listed in the pull request.
+`cursor://anysphere.cursor-mcp/oauth/callback` is accepted as well. An unregistered redirect URI is rejected.
+
+Non-blocking server quirks: a client registered only with `http://127.0.0.1:8787/callback` cannot authorize; client-ID metadata document fetch is advertised but denied (dynamic registration works); RFC 7592 client management is advertised but not implemented.
